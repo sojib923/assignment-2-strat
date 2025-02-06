@@ -19,38 +19,232 @@
 <body class="fond-Quicksand">
 
     <header class="w-full md:container mx-auto">
-        <nav>
-            <div>
+        <!-- nav 1 -->
+        <nav class="bg-base-100 shadow-md">
 
-                <div class="flex">
-                    <div class="navbar bg-base-100">
-                        <img src="assets/logo.png" alt="">
-                        <h2>SCHOOL</h2>
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    
+                <div class="flex justify-between items-center py-4">
+    
+                    <!-- Logo -->
+    
+                    <div class="flex items-center space-x-2">
+    
+                        <img src="assets/logo.png" alt="Logo" class="h-10">
+    
+                        <h2 class="text-xl font-bold">SCHOOL</h2>
+    
                     </div>
-                      
+    
+    
+                    <!-- Desktop Menu -->
+    
+                    <div class="hidden lg:flex space-x-6">
+    
+                        <a href="H" class="text-gray-700 hover:text-blue-500"><span class="text-[#FEA301]">Home</span></a>
+    
+                        <a href="A" class="text-gray-700 hover:text-blue-500"><span class="text-[#01ACFD]">About</span></a>
+    
+                        <a href="F" class="text-gray-700 hover:text-blue-500"> <span class="text-[#05D4DF]">Facilities</span></a>
+    
+                        <a href="A" class="text-gray-700 hover:text-blue-500"><span class="text-[#5D58EF]">Admission</span></a>
+    
+                    </div>
+                    <div class="hidden lg:flex space-x-6">
+                        <button class="text-white btn btn-warning">Contact</button>
+                    </div>
+    
+    
+                    <!-- Mobile Menu Button -->
+    
+                    <div class="lg:hidden">
+    
+                        <button id="menu-toggle" class="focus:outline-none">
+    
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+    
+                                xmlns="http://www.w3.org/2000/svg">
+    
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+    
+                                    d="M4 6h16M4 12h16m-7 6h7"></path>
+    
+                            </svg>
+    
+                        </button>
+    
+                    </div>
+    
                 </div>
+    
+    
+                <!-- Mobile Menu -->
+    
+                <div id="mobile-menu" class="lg:hidden hidden flex flex-col space-y-4 pb-4">
+    
+                    <a href="H" class="text-gray-700 hover:text-blue-500 block">Home</a>
+    
+                    <a href="A" class="text-gray-700 hover:text-blue-500 block">About</a>
+    
+                    <a href="F" class="text-gray-700 hover:text-blue-500 block">Facilities</a>
+    
+                    <a href="A" class="text-gray-700 hover:text-blue-500 block">Admission</a>
+    
+                </div>
+                <div id="mobile-menu" class="lg:hidden hidden flex flex-col space-y-4 pb-4">
+                    <button class="btn btn-warning">Warning</button>
+                </div>
+    
             </div>
+    
         </nav>
 
-        <section class="flex grid grid-cols lg:grid-cols-2 pt-16 justify-items-center">
-            <div class="">
-                <h1 class="font-bold text-4xl"><span class="text-[#FEA301]">Empowering</span> <br>
-                    students from small <br> age <span class="text-[#01ACFD]">towards vision</span></h1>
+
+        <section class="flex grid grid-cols lg:grid-cols-2 pt-16 justify-items-center px-4">
+            <div class="order-2 lg:order-none text-center lg:text-left px-4 pt-6">
+                <h1 class="font-bold text-4xl"><span class="text-[#FEA301]">Empowering</span><br>
+                    students from small <br>age <span class="text-[#01ACFD]">towards vision</span></h1>
                     <p class="pt-4 pb-4">With the courage, Confidence, Creativity and Compassion to make their Unique Contribution in a Diverse and Dynamic World.</p>
                     <button class="btn btn-active btn-neutral font-bold text-xl">Enroll Now</button>
             </div>
-            <div class="">
+            <div class="order-1 lg:order-none flex justify-center">
                 <img src="assets/hero-kids.png" alt="">
             </div>
         </section>
     </header>
 
-    <main>
+    <main class="w-full md:container mx-auto pt-16">
+        <section class="px-4">
+            <div class="text-center pb-4">
+                <h1 class="font-bold text-3xl">Standard Curriculum</h1>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 text-center pt-8">
 
+                <!-- box container 1 -->
+                    <div class="rounded-lg overflow-hidden px-5 py-5 shadow-lg bg-gradient-to-b from-[#DEF5FF] to-[#FFFFFF]">
+                      <img class="mx-auto pt-2" src="assets/kinder.png" alt="">
+                      <h3 class="font-bold text-xl pt-2 pb-2">Kinder (3-6) Years</h3>
+                      <p>Cum sociis natoque penatibus et magnis <br>
+                        dis parturient montes, nascetur ridiculus <br>
+                        mu sdis parturient</p>
+                        <button class="font-bold pt-2"><span class="text-[#64C8FF]">Read More</span></button>
+                    </div>
+
+                    <!-- box container 2 -->
+                    <div class="rounded-lg overflow-hidden px-5 py-5 shadow-lg bg-gradient-to-b from-[#FFF4DC] to-[#FFFFFF]">
+                        <img class="mx-auto pt-2" src="assets/elementary.png" alt="">
+                        <h3 class="font-bold text-xl pt-2 pb-2">Elementary School</h3>
+                        <p>Cum sociis natoque penatibus et magnis <br>
+                          dis parturient montes, nascetur ridiculus <br>
+                          mu sdis parturient</p>
+                          <button class="font-bold pt-2"><span class="text-[#F0AA00]">Read More</span></button>
+                      </div>
+
+                      <!-- box container 3 -->
+                      <div class="rounded-lg overflow-hidden px-5 py-5 shadow-lg bg-gradient-to-b from-[#F2E8FF] to-[#FFFFFF]">
+                        <img class="mx-auto pt-2" src="assets/middle.png" alt="">
+                        <h3 class="font-bold text-xl pt-2 pb-2">Middle (10-16) Years</h3>
+                        <p>Cum sociis natoque penatibus et magnis <br>
+                          dis parturient montes, nascetur ridiculus <br>
+                          mu sdis parturient</p>
+                          <button class="font-bold pt-2"><span class="text-[#8700FF]">Read More</span></button>
+                      </div>
+            </div>
+        </section>
+
+        <section class="px-4 py-8  bg-gradient-to-b from-[#FFFFFF] to-[#FEA301]">
+            <div>
+                <h1 class="font-bold text-2xl text-center">Our Stories</h1>
+            </div>
+            <div>
+                <div class="gap-4 text-center pt-8">
+                    <div class="rounded-lg  overflow-hidden px-5 py-5 bg-white">
+                      <img class="mx-auto" src="assets/story-1.png" alt="">
+                      <div class="text-justify">
+                        <button class="btn btn-info">November 19, 2019</button>
+                        <h2 class="pt-4 font-bold text-xl pb-2">A fun toddler coloring training on <br> classroom<h2>
+                        <p class="pt-4 text-gray-500">Beautiful branding for changes by Never Now in Australia. <br>
+                            changes is a platform for open discussion in an inclusive and <br>
+                            collaborative environment, providing the...</p>
+                      </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 text-center pt-4">
+
+                        <div class="rounded-lg  overflow-hidden px-5 py-5 bg-white">
+                            <img class="mx-auto" src="assets/story-2.png" alt="">
+                            <div class="text-justify">
+                              <button class="btn btn-info">November 19, 2019</button>
+                              <h2 class="pt-4 font-bold text-xl pb-2">Find out if a school fits the
+                                family’s needs<h2>
+                            </div>
+                          </div>
+                          <!-- box 2 -->
+                          <div class="rounded-lg  overflow-hidden px-5 py-5 bg-white">
+                            <img class="mx-auto" src="assets/story-3.png" alt="">
+                            <div class="text-justify">
+                              <button class="btn btn-info">November 19, 2019</button>
+                              <h2 class="pt-4 font-bold text-xl pb-2">Summer math & literacy
+                                centres for kids<h2>
+                            </div>
+                          </div>
+                          <!-- box 3 -->
+                          <div class="rounded-lg  overflow-hidden px-5 py-5 bg-white">
+                            <img class="mx-auto" src="assets/story-4.png" alt="">
+                            <div class="text-justify">
+                              <button class="btn btn-info">September 10, 2019</button>
+                              <h2 class="pt-4 font-bold text-xl pb-2">Classroom management
+                                techniques for new tutors<h2>
+                            </div>
+                          </div>
+                          <!-- box 4 -->
+                          <div class="rounded-lg  overflow-hidden px-5 py-5 bg-white text-center">
+                            <img class="mx-auto" src="assets/story-5.png" alt="">
+                            <div class="text-justify">
+                              <button class="btn btn-info">July 19, 2019</button>
+                              <h2 class="pt-4 font-bold text-xl pb-2">Conversation rhymes
+                                improve kids listening<h2>
+                            </div>
+                          </div>
+
+                    </div>
+            </div>
+            <div class="text-center pt-24 pb-12">
+                <button class="btn btn-neutral">View All</button>
+            </div>
+        </section>
     </main>
 
-    <footer>
+    <footer class="footer bg-[#179800] text-base-content p-10 pt-40">
+        <nav>
+            <div class="flex">
+                <a href=""><img src="assets/logo.png" alt=""></a>
+            <a href=""><h1 class="font-bold text-2xl text-white">Kids <br>
+                Education</h1></a>
+            </div>
+            <a class="link link-hover pt-4 text-white">Pizza ipsum dolor meat lovers buffalo. <br> Deep dolor roll melted bacon Bianca pan <br> bacon pineapple Aussie. Mayo rib sauce <br> Hawaiian meatball.</a>
+          </nav>
+          <nav class="text-white">
+            <h1 class="font-bold text-xl pb-4">About School</h1>
+            <a class="link link-hover">Home</a>
+            <a class="link link-hover pt-3 pb-3">About</a>
+            <a class="link link-hover">Facilities</a>
+            <a class="link link-hover pt-2">Admission</a>
+          </nav>
+          <nav>
+            <h1 class="font-bold text-white text-xl pb-4">Keep In Touch</h1>
+            <div class="grid grid-flow-col gap-4 text-white">
+                <a href=""><img src="assets/fb.png" alt=""></a>
 
+                <a href=""><img src="assets/dribble.png" alt=""></a>
+
+                <a href=""><img src="assets/twitter.png" alt=""></a>
+
+                <a href=""><img src="assets/google+.png" alt=""></a>
+              
+             
+            </div>
+          </nav>
     </footer>
 </body>
 </html>
